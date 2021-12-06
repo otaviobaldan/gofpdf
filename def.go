@@ -316,6 +316,7 @@ type Pdf interface {
 	AddFont(familyStr, styleStr, fileStr string)
 	AddFontFromBytes(familyStr, styleStr string, jsonFileBytes, zFileBytes []byte)
 	AddFontFromReader(familyStr, styleStr string, r io.Reader)
+	AddUTF8Font(familyStr, styleStr, fileStr string)
 	AddLayer(name string, visible bool) (layerID int)
 	AddLink() int
 	AddPage()
